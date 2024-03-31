@@ -15,6 +15,10 @@
   background-color: var(--white);
 }
 
+.shop-filter-products-container {
+  min-height: 100vh;
+}
+
 @media screen and (min-width: 768px) {
   .shop-container {
     padding-top: 0vh;
@@ -22,6 +26,7 @@
 
   .shop-filter-products-container {
     display: flex;
+    justify-content: center;
     padding: 0 2rem;
   }
 
@@ -36,8 +41,6 @@
   }
 
   .shop-filter-products-container {
-    display: flex;
-    padding: 0 2rem;
   }
 
   .shop-no-results-container {

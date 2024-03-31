@@ -1,7 +1,7 @@
-import React from 'react'
-import './style.css'
-import { Box, Typography } from '@mui/material'
-import aboutImg from '../../../assets/images/perro-pug-en-el-jardin.png'
+import React from "react"
+import "./style.css"
+import { Box, Typography } from "@mui/material"
+import aboutImg from "../../../assets/images/perro-pug-en-el-jardin.png"
 
 const About = () => {
   return (
@@ -11,9 +11,9 @@ const About = () => {
           About us
         </Typography>
       </Box>
-      <Box className='about-img-text-container'>
+      <Box className='about-img-text-container gradient-background left'>
         <img src={aboutImg} alt='pug on garden' className='about-img'></img>
-        <Typography>
+        <Typography className='about-p'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
           repellat natus suscipit. Ipsam molestiae praesentium, ratione dolore,
           ullam harum sequi ut voluptatibus amet quae fugit. Quos eligendi dicta
@@ -22,17 +22,32 @@ const About = () => {
           quidem aspernatur magnam molestiae, cum laudantium assumenda
           perspiciatis.
         </Typography>
-        <br />
-        <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          laboriosam nam eveniet nostrum nemo molestiae aperiam ducimus, neque
-          vitae eum labore itaque hic qui pariatur!
+      </Box>
+      <Box className='about-img-text-container'>
+        <img
+          src='https://dogsbestlife.com/wp-content/uploads/2021/02/dog-lovers-border-collies-scaled.jpeg'
+          alt='people with dogs'
+          className='about-img'
+          style={{ order: 1 }}
+        ></img>
+        <Typography className='about-p' style={{ order: 0 }}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quia
+          itaque veritatis distinctio error eum libero eius qui. Sit corrupti
+          laudantium inventore maxime recusandae obcaecati aperiam? Ducimus ipsa
+          cum expedita.
         </Typography>
-        <br />
-        <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis odio
-          nemo velit error deserunt labore consequuntur, aperiam nostrum! Alias
-          obcaecati eos facilis sapiente excepturi! Vitae!
+      </Box>
+      <Box className='about-img-text-container'>
+        <img
+          src='https://www.lawnstarter.com/blog/wp-content/uploads/2023/08/pexels-blue-bird-7210705new-1.png'
+          alt='multiple dogs and a woman'
+          className='about-img'
+        ></img>
+        <Typography className='about-p'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quia
+          itaque veritatis distinctio error eum libero eius qui. Sit corrupti
+          laudantium inventore maxime recusandae obcaecati aperiam? Ducimus ipsa
+          cum expedita.
         </Typography>
       </Box>
     </Box>

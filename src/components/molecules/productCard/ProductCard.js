@@ -1,23 +1,23 @@
-import './style.css'
-import React, { useState } from 'react'
-import { styled } from '@mui/material/styles'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import Button from '@mui/material/Button'
-import Typography from '@mui/material/Typography'
-import Collapse from '@mui/material/Collapse'
-import IconButton from '@mui/material/IconButton'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import "./style.css"
+import React, { useState } from "react"
+import { styled } from "@mui/material/styles"
+import Card from "@mui/material/Card"
+import CardActions from "@mui/material/CardActions"
+import CardContent from "@mui/material/CardContent"
+import CardMedia from "@mui/material/CardMedia"
+import Button from "@mui/material/Button"
+import Typography from "@mui/material/Typography"
+import Collapse from "@mui/material/Collapse"
+import IconButton from "@mui/material/IconButton"
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props
   return <IconButton {...other} />
 })(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: '0.1em',
-  transition: theme.transitions.create('transform', {
+  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+  marginLeft: "0.1em",
+  transition: theme.transitions.create("transform", {
     duration: theme.transitions.duration.shortest,
   }),
 }))
@@ -46,26 +46,29 @@ const ProductCard = (props) => {
     <Card
       className='product-card'
       variant='elevation'
-      sx={{ width: { tablet: '200px', mobile: '250px' }, margin: '1em 0' }}
+      sx={{
+        width: { tablet: "200px", mobile: "250px", desktop: "220px" },
+        margin: "1em 0",
+      }}
     >
       <CardMedia
         component='img'
         sx={{
-          width: { tablet: '150px', mobile: '185px' },
-          height: { tablet: '150px', mobile: '185px' },
-          marginLeft: { tablet: '25px', mobile: '32px' },
+          width: { tablet: "150px", mobile: "185px" },
+          height: { tablet: "150px", mobile: "185px" },
+          marginLeft: { tablet: "20px", mobile: "32px", desktop: "35px" },
         }}
         image={props.productImg}
         alt={props.productName}
       />
-      <CardContent sx={{ paddingBottom: 0, paddingTop: '8px' }}>
+      <CardContent sx={{ paddingBottom: 0, paddingTop: "8px" }}>
         <Typography gutterBottom variant='h6' component='div'>
           {props.productPrice}$
         </Typography>
         <Typography
           variant='h7'
           color='text.secondary'
-          sx={{ display: 'block' }}
+          sx={{ display: "block" }}
         >
           {props.productName}
         </Typography>
@@ -75,9 +78,9 @@ const ProductCard = (props) => {
         <Typography
           variant='button'
           sx={{
-            marginLeft: { tablet: '3.5em', mobile: '4.5em' },
-            fontSize: '0.8em',
-            color: '#e37b64',
+            marginLeft: { tablet: "3.5em", mobile: "4.5em" },
+            fontSize: "0.8em",
+            color: "#e37b64",
           }}
         >
           See More
@@ -93,8 +96,8 @@ const ProductCard = (props) => {
       </CardContent>
       <CardActions
         sx={{
-          '&.MuiCardActions-root': {
-            justifyContent: 'flex-end',
+          "&.MuiCardActions-root": {
+            justifyContent: "flex-end",
           },
         }}
       >

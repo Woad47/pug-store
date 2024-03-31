@@ -31,10 +31,14 @@
   filter: brightness(1.3);
 }
 
+.nav-bar-menu-button {
+  position: fixed !important;
+}
+
 .logo-container {
   padding-top: 0.5em;
-  position: fixed;
-  left: 30vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {

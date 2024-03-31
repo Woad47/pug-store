@@ -11,6 +11,15 @@
   text-shadow: 2px 2px 10px black;
 }
 
+.home-p-small {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #ffff;
+  max-width: 500px !important;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 5px black;
+}
+
 .home-call-to-action {
   display: flex;
   flex-direction: column;

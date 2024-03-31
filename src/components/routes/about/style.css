@@ -5,7 +5,6 @@
 
 .about-title-container {
   text-align: center;
-  padding-bottom: 2em;
 }
 
 .about-title {
@@ -20,15 +19,20 @@
 }
 
 .about-img-text-container {
-  background: linear-gradient(180deg, var(--blue) 10%, var(--white) 10%);
-  padding: 2em 1em;
+  background: var(--white);
+  padding: 0em 1em;
+  padding-bottom: 1em;
   text-justify: inter-word;
+  padding-top: 3em;
+}
+
+.gradient-background {
+  background: linear-gradient(180deg, var(--blue) 15%, var(--white) 10%);
 }
 
 @media screen and (min-width: 768px) {
   .about-img-text-container {
-    background: linear-gradient(180deg, var(--blue) 15%, var(--white) 15%);
-    padding: 2em 25%;
+    padding: 1em 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,12 +45,21 @@
 
   .about-title-container {
     text-align: center;
-    padding-bottom: 4em;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-img-text-container {
-    padding: 2em 30%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "column-1 column-2";
+    padding: 2em 10%;
+    gap: 2em;
+  }
+
+  .about-p {
+    background-color: rgb(243, 243, 243);
+    padding: 1em;
+    border-radius: 5px;
   }
 }
