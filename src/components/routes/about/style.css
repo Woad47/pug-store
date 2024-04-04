@@ -30,6 +30,9 @@
   background: linear-gradient(180deg, var(--blue) 15%, var(--white) 10%);
 }
 
+.first {
+}
+
 @media screen and (min-width: 768px) {
   .about-img-text-container {
     padding: 1em 20%;
@@ -61,5 +64,9 @@
     background-color: rgb(243, 243, 243);
     padding: 1em;
     border-radius: 5px;
+  }
+
+  .first {
+    order: -1;
   }
 }

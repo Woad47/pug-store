@@ -28,9 +28,8 @@ const About = () => {
           src='https://dogsbestlife.com/wp-content/uploads/2021/02/dog-lovers-border-collies-scaled.jpeg'
           alt='people with dogs'
           className='about-img'
-          style={{ order: 1 }}
         ></img>
-        <Typography className='about-p' style={{ order: 0 }}>
+        <Typography className='about-p first'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quia
           itaque veritatis distinctio error eum libero eius qui. Sit corrupti
           laudantium inventore maxime recusandae obcaecati aperiam? Ducimus ipsa
